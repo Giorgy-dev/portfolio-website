@@ -1,0 +1,42 @@
+[
+    {
+        "sw": [
+            "Touchdesigner",
+            "Blender",
+            "Rhinoceros",
+            "Autodesk Fusion 360",
+            "Keyshot",
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "Adobe inDesign",
+            "Adobe Lightroom",
+            "Adobe LrC",
+            "Figma",
+            "Pixelmator Pro",
+            "Davinci Resolve",
+            "FL Studio",
+            "Ableton Live",
+            "Reaper"
+        ],
+        "plang": [
+            "Typescript",
+            "Javascript",
+            "Python",
+            "Dart",
+            "SCSS",
+            "mySQL"
+        ],
+        "fw": [
+            "Svelte",
+            "React",
+            "React Native",
+            "Flutter",
+            "Supabase"
+        ]
+    },
+    [
+        "Emotional intelligence: I am able to recognize the team’s non-verbal signals and create space for expressing concerns or frustrations at the right time and in the right way.",
+        "I build trustful relationships by actively listening and showing genuine interest in others’ perspectives",
+        "I handle conflicts with diplomacy, enabling the team to find collaborative solutions."
+    ]
+]

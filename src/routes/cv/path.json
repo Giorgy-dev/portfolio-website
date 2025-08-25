@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Experiences",
+    "content": [
+      {
+        "isHighlighted": true,
+        "period": [
+          2025
+        ],
+        "title": "OPEN TO WORK",
+        "sector": "Product Design and Communication"
+      },
+      {
+        "period": [
+          2025
+        ],
+        "title": "Q Design Studios",
+        "link": "https://qdesign.it/",
+        "sector": "Product Design and Communication",
+        "role": "Founder & Creative Director"
+      },
+      {
+        "period": [
+          2025,
+          2025
+        ],
+        "title": "Virgo",
+        "link": "https://virgosites.com/",
+        "sector": "Sotftware House",
+        "role": "Web Developer"
+      }
+    ]
+  },
+  {
+    "title": "Education",
+    "content": [
+      {
+        "period": [
+          2022,
+          2025
+        ],
+        "title": "Scuola Italiana Design",
+        "link": "https://www.scuolaitalianadesign.com/",
+        "sector": "Product Design and Communication"
+      },
+      {
+        "period": [
+          2017,
+          2022
+        ],
+        "title": "ITI Severi Padova",
+        "link": "https://www.itiseveripadova.edu.it/",
+        "sector": "IT & Telecommunications"
+      }
+    ]
+  }
+]
