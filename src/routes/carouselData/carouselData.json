@@ -1,21 +1,38 @@
 [
   {
     "isVideo": false,
-    "alt": "Threshold is an experiential product, designed to be touched, observed, and perceived in a way that distinguishes it from other furnishings. It becomes a protagonist within the environment.",
-    "src": "/assets/_MG_1487.jpg",
-    "title": "Threshold"
-  },
-  {
-    "isVideo": false,
-    "alt": "Humans Jam reproduces, in different contexts, the expression of the form of perception.",
-    "src": "/assets/_MG_0287_ERIKA.jpg",
-    "title": "Humans Jam"
+    "alt": "Interaction is at the center of every experience; it is necessary for the objects that surround us to live in turn, so that they can shine at their best and live with their own light.",
+    "src": "/assets/_MG_0087-Edit.jpg",
+    "title": "Redo"
   },
   {
     "isVideo": true,
     "alt": "A bold, authoritative, and innovative visual identity that amplifies traits already present in the brand we know.",
     "src": "/assets/particles.mp4",
     "title": "IDD"
+  },
+  {
+    "isVideo": false,
+    "alt": "Threshold is an experiential product, designed to be touched, observed, and perceived in a way that distinguishes it from other furnishings. It becomes a protagonist within the environment.",
+    "src": "/assets/_MG_1487.jpg",
+    "title": "Threshold"
+  },
+  {
+    "isVideo": true,
+    "src": "/assets/waiting.mp4",
+    "title": "Waiting"
+  },
+  {
+    "isVideo": true,
+    "alt": "A tribute to the printing of the Hypnerotomachia Poliphili.",
+    "src": "/assets/venissa2.mp4",
+    "title": "Venissa"
+  },
+  {
+    "isVideo": false,
+    "alt": "Humans Jam reproduces, in different contexts, the expression of the form of perception.",
+    "src": "/assets/_MG_0287_ERIKA.jpg",
+    "title": "Humans Jam"
   },
   {
     "isVideo": false,
@@ -28,22 +45,5 @@
     "alt": "Rebirth is a living table. Its rough and weathered form seeks to reconnect with nature, which over the years reclaims what was taken from it.",
     "src": "/assets/IMG_0986.jpg",
     "title": "Rebirth"
-  },
-  {
-    "isVideo": true,
-    "src": "/assets/waiting.mp4",
-    "title": "Waiting"
-  },
-  {
-    "isVideo": false,
-    "alt": "Interaction is at the center of every experience; it is necessary for the objects that surround us to live in turn, so that they can shine at their best and live with their own light.",
-    "src": "/assets/_MG_0087-Edit.jpg",
-    "title": "Redo"
-  },
-  {
-    "isVideo": true,
-    "alt": "A tribute to the printing of the Hypnerotomachia Poliphili.",
-    "src": "/assets/venissa2.mp4",
-    "title": "Venissa"
   }
 ]
