@@ -19,15 +19,12 @@
   let isPlaying: boolean[] = images.map(() => false);
   let canScrollPrev = $state(false);
   let canScrollNext = $state(false);
-  
+
   // ✅ SOLUZIONE: Variabile per tracciare se è la prima inizializzazione
   let isFirstInit = true;
   let lastSelectedIndex = 0;
 
-  const {
-    autoplayEnabled = true,
-    stopAutoplayOnInteraction = true,
-  } = $props();
+  const { autoplayEnabled = true, stopAutoplayOnInteraction = true } = $props();
 
   // ✅ SOLUZIONE: Inizializzazione immagine
   image = images[0];
@@ -74,7 +71,7 @@
   // ✅ SOLUZIONE: Gestione centralizzata della selezione
   const updateSelection = (newIndex?: number) => {
     if (!emblaApi) return;
-    
+
     const currentIndex = newIndex ?? emblaApi.selectedScrollSnap();
     selectedIndex = currentIndex;
     lastSelectedIndex = currentIndex;
@@ -131,7 +128,7 @@
   const handleVideoPlay = (index: number) => {
     isPlaying[index] = true;
     isPlaying = [...isPlaying];
-    
+
     if (autoplayPlugin) {
       autoplayPlugin.stop();
       isAutoplayActive = false;
@@ -177,7 +174,7 @@
   class="embla absolute h-screen w-screen"
   use:emblaCarouselSvelte={{
     options: emblaOptions,
-    plugins: emblaPlugins
+    plugins: emblaPlugins,
   }}
   onemblaInit={(evt) => onInit(evt.detail)}
 >
@@ -234,10 +231,13 @@
 
 <!-- Indicatori slide -->
 {#if images.length > 1}
-  <div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+  <div
+    class="fixed bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20"
+  >
     {#each images as _, index}
       <button
-        class="w-2 h-2 rounded-full transition-all duration-300 {index === selectedIndex
+        class="w-2 h-2 rounded-full transition-all duration-300 {index ===
+        selectedIndex
           ? 'bg-[#ffce0a] w-8'
           : 'bg-[#ffce0a] bg-opacity-50 hover:bg-opacity-80'}"
         onclick={() => goToSlide(index)}
@@ -250,12 +250,14 @@
 {/if}
 
 <div class="h-screen w-screen flex items-end justify-left">
-  <div class="w-full lg:max-w-[30vw] my-18 mx-4 lg:m-10 z-10! flex flex-col gap-4">
+  <div
+    class="w-full lg:max-w-[30vw] my-18 mx-4 lg:m-10 z-10! flex flex-col gap-4"
+  >
     <h1 class="ibm-plex-mono-medium text-2xl">
-      {image?.title || ''}
+      {image?.title || ""}
     </h1>
     <h2 class="ibm-plex-mono-regular stroke-black">
-      {image?.alt || ''}
+      {image?.alt || ""}
     </h2>
   </div>
 </div>
