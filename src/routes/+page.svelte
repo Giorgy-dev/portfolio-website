@@ -171,20 +171,20 @@
 
 <!-- ✅ SOLUZIONE: Configurazione Embla semplificata e statica -->
 <div
-  class="embla absolute h-screen w-screen"
+  class="embla absolute h-dvh w-screen"
   use:emblaCarouselSvelte={{
     options: emblaOptions,
     plugins: emblaPlugins,
   }}
   onemblaInit={(evt) => onInit(evt.detail)}
 >
-  <div class="embla__container h-screen w-screen">
+  <div class="embla__container h-dvh w-screen">
     {#each images as item, index}
-      <div class="embla__slide h-screen w-screen">
+      <div class="embla__slide h-dvh w-screen">
         {#if item.isVideo}
           <video
             bind:this={videoElements[index]}
-            class="h-screen w-screen object-cover"
+            class="h-dvh w-screen object-cover"
             autoplay
             muted
             loop
@@ -198,7 +198,7 @@
           <img
             alt={item.alt || ""}
             src={item.src}
-            class="h-screen w-screen object-cover"
+            class="h-dvh w-screen object-cover"
           />
         {/if}
       </div>
@@ -249,7 +249,7 @@
   </div>
 {/if}
 
-<div class="h-screen w-screen flex items-end justify-left">
+<div class="h-dvh w-screen flex items-end justify-left">
   <div
     class="w-full lg:max-w-[30vw] my-18 mx-4 lg:m-10 z-10! flex flex-col gap-4"
   >
