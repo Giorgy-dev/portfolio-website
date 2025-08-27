@@ -134,7 +134,7 @@ px-4 lg:px-10 pb-2 gap-10 pt-[25vh]
           </div>
         {/each}
       </div>
-      <Hr class="border-[#ffce0a] border-2 rounded-full" />
+      <!-- <Hr class="border-[#ffce0a] border-2 rounded-full" /> -->
     {/each}
   </div>
 </div>

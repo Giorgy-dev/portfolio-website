@@ -8,9 +8,17 @@
   } from "flowbite-svelte-icons";
 
   import images from "./carouselData/carouselData.json";
-  import type { HTMLImgAttributes } from "svelte/elements";
 
-  let image: HTMLImgAttributes | undefined = $state();
+  type CarouselItem = {
+    src: string;
+    alt?: string;
+    title?: string;
+    sector: string[];
+    isVideo?: boolean;
+    // add other properties as needed
+  };
+
+  let image: CarouselItem | undefined = $state();
   let selectedIndex = $state(0);
 
   // ✅ SOLUZIONE: Variabili per gestire lo stato
@@ -212,8 +220,6 @@
     class="fixed top-1/2 left-6 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-[#ffce0a] rounded-full p-3 transition-all duration-300 z-20 backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
     onclick={scrollPrev}
     type="button"
-    title="Slide precedente"
-    aria-label="Slide precedente"
   >
     <ChevronLeftOutline class="w-6 h-6" />
   </button>
@@ -222,8 +228,6 @@
     class="fixed top-1/2 right-6 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-[#ffce0a] rounded-full p-3 transition-all duration-300 z-20 backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
     onclick={scrollNext}
     type="button"
-    title="Slide successiva"
-    aria-label="Slide successiva"
   >
     <ChevronRightOutline class="w-6 h-6" />
   </button>
@@ -242,8 +246,8 @@
           : 'bg-[#ffce0a] bg-opacity-50 hover:bg-opacity-80'}"
         onclick={() => goToSlide(index)}
         type="button"
-        title={`Vai alla slide ${index + 1}`}
-        aria-label={`Vai alla slide ${index + 1}`}
+        title={`Go to slide ${index + 1}`}
+        aria-label={`Go to slide ${index + 1}`}
       ></button>
     {/each}
   </div>
@@ -251,11 +255,24 @@
 
 <div class="h-dvh w-screen flex items-end justify-left">
   <div
-    class="w-full lg:max-w-[30vw] my-18 mx-4 lg:m-10 z-10! flex flex-col gap-4"
+    class="w-full lg:max-w-[40vw] my-18 mx-4 lg:m-10 z-10! flex flex-col gap-4"
   >
-    <h1 class="ibm-plex-mono-medium text-2xl">
-      {image?.title || ""}
-    </h1>
+    <div class="flex flex-col lg:flex-row lg:items-center gap-0">
+      <h1 class="ibm-plex-mono-medium text-2xl">
+        {image?.title || ""}
+      </h1>
+      {#if image?.sector}
+        <div class="flex flex-row flex-wrap gap-4 pt-4 lg:p-4">
+          {#each image?.sector as item}
+            <p
+              class="text-xs bg-[#ffce0a] p-1 px-3 text-[#141414]! rounded-full"
+            >
+              {item}
+            </p>
+          {/each}
+        </div>
+      {/if}
+    </div>
     <h2 class="ibm-plex-mono-regular stroke-black">
       {image?.alt || ""}
     </h2>
