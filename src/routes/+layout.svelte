@@ -6,7 +6,7 @@ Testing also Claude AI and Copilot for code generation
 -->
 
 <script lang="ts">
-  import favicon from "$lib/assets/favicon.svg";
+  import favicon from "$lib/assets/favicon.png";
   import "../style/main.css";
   import "../app.css";
   let { children } = $props();
